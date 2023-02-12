@@ -6,7 +6,7 @@
 
 form{
     height: 30vh;
-    width: 30vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,15 +17,13 @@ form{
 }
 
 input{
-    width: 80%;
+    width: 70%;
 }
 
 .aprovado{
-   box-shadow: 0px 0px 8px green; 
-   background-color: green;
+   box-shadow: 0px 0px 10px green; 
 }
 
 .reprovado{
-    box-shadow: 0px 0px 8px red; 
-    background-color: red;
+    box-shadow: 0px 0px 10px red; 
 }

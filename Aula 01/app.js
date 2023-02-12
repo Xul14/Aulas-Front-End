@@ -1,43 +1,28 @@
 'use strict'
 
-// const calcular = document.getElementById('calcular')
-
-// function somar() {
-//     const numero1 = parseInt(document.getElementById('numero1').value)
-//     const numero2 = parseInt(document.getElementById('numero2').value)
-//     const formulario = document.getElementById('formulario')
-
-//     const resultado = numero1 + numero2
-//     document.getElementById('resultado').value = resultado
-
-//     formulario.classList.add('sombreamento')
-
-// }
-
-// calcular.addEventListener('click', somar)
-
 const calcular = document.getElementById('calcular')
 
-function somarNotas(){
-    const nota1 = (document.getElementById('nota1').value)
-    const nota2 = (document.getElementById('nota2').value)
-    const situacao = document.getElementById('situacao')
-    const formulario = document.getElementById('formulario')
+function somar() {
+   const numero1 = parseInt(document.getElementById('numero1').value)
+   const numero2 = parseInt(document.getElementById('numero2').value)
+   const formulario = document.getElementById('formulario')
+   const aprovado = 'APROVADO!!!!'
+   const reprovado = 'REPROVADO!!!!'
 
-    const media = (parseFloat(nota1) + parseFloat(nota2))/2
+   const media = (numero1 + numero2) / 2
+   document.getElementById('resultado').value = resultado
 
-    const aprovado = 'APROVADO!!!!'
-    const reprovado = 'REPROVADO!!!!' 
-    
-    if(media >= 7){
-       situacao.value = aprovado
-       formulario.classList.add('aprovado')
+   if (media >= 7) {
+      resultado.value = aprovado
+      formulario.classList.add('aprovado')
+      formulario.classList.remove('reprovado')
 
-    }else{
-       situacao.value = reprovado
-       formulario.classList.add('reprovado')
-    }
+   } else {
+      resultado.value = reprovado
+      formulario.classList.add('reprovado')
+      formulario.classList.remove('aprovado')
+   }
 
 }
 
-calcular.addEventListener('click', somarNotas)
+calcular.addEventListener('click', somar)
