@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    min-height: 50vh;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+    margin: 16px;
+    flex-wrap: wrap;
+    background-color: rosybrown;
+    color: white;
+}
+
+.aluno{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.aluno_nota{
+    font-size: 120px;
+}
+
+.nota_vermelha{
+    background-color: red;
+}
+
+.nota_verde{
+    background-color: green;
+}
